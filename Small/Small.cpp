@@ -2,7 +2,79 @@
 using std::cout;
 using std::cin;
 
-int main()
+int main() {
+
+    int answer = 7;
+    int userTry;
+    bool keepGoing = true;
+    while (keepGoing)
+    {
+        cout << "Guess my number ";
+        cin >> userTry;
+        
+        if (userTry > answer)
+        {
+            cout << "Your number is bigger than mine. ";
+        } 
+        else if (userTry == answer)
+        {
+            cout << "\n";
+            for (int i = 0; i < 10; i++)
+            {
+                cout << "...";
+            }
+            cout << "Congrats. You win.";
+            keepGoing = false;
+        } 
+        else
+        {
+            cout << "Your number is smaller than mine. ";
+        }
+        cout << "\n";
+    }
+}
+int mainFlowOfControl()
+{
+    int first;
+    int second;
+    bool keepGoing = true;
+    while (keepGoing)
+    {
+        cout << "Enter a number: ";
+        cin >> first;
+        cout << "Enter another number: ";
+        cin >> second;
+
+        if (first > second)
+        {
+            cout << first << " > " << second;
+        } 
+        else if (first == second)
+        {
+            cout << first << " = " << second;
+        } 
+        else
+        {
+            cout << first << " < " << second;
+        }
+
+        cout << "\n";
+        for (int i = 0; i < 10; i++)
+        {
+            cout << i;
+        }
+
+        cout << "\n\nContinue y/n?";
+        char isContinue;
+        cin >> isContinue;
+        if (isContinue == 'n') 
+        {
+            keepGoing = false;
+        }
+    }
+}
+
+int mainStreamIO()
 {
     std::cout << "Hello Output!" << "\n";
     std::cout << 34 << "\n";
