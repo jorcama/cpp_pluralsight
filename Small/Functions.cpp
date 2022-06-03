@@ -1,7 +1,10 @@
 #include <iostream>
+#include "Functions.h"
+#include <string>
 
 using std::cout;
 using std::cin;
+using std::string;
 
 double add(double x, double y)
 {
@@ -20,6 +23,63 @@ void doFunctions()
 	cout << "1.2 + 1.3 is: " << add(1.2, 1.3) << "\n";
 
 	cout << "1.2 + 1.3 + 1.4 is: " << add(1.2, 1.3, 1.4) << "\n";
+}
+
+void doString()
+{
+	string name;
+
+	cout << "Who are you?\n";
+	cin >> name;
+
+	string greeting = "Hello " + name;
+
+	if (name == "Jorge")
+	{
+		greeting += ", I know you.";
+	}
+
+	cout << greeting << "\n";
+
+	int l = greeting.length();
+	cout << "\"greeting\" is " << l << " chars long.\n";
+	
+	string beginning = greeting.substr(greeting.find(" ") + 1 );
+	cout << beginning << "\n";
+	if (beginning == name)
+	{
+		cout << "Got it.\n";
+	}
+}
+
+void doStringExercise()
+{
+	string firstPhrase;
+	string secondPhrase;
+
+	cout << "Please type one first string?\n";
+	getline(cin, firstPhrase);
+
+	cout << "Please type one second string?\n";
+	getline(cin, secondPhrase);
+	
+	int firstLenght = firstPhrase.length();
+	int secondLenght = secondPhrase.length();
+
+	if (firstLenght == secondLenght)
+	{
+		cout << "Strings are the same lenght.\n";
+		return;
+	}
+	
+	if (firstLenght > secondLenght)
+	{
+		cout << "\"" + firstPhrase + "\" is longer than \"" + secondPhrase + "\"\n";
+	}
+	else
+	{
+		cout << "\"" + secondPhrase + "\" is longer than \"" + firstPhrase + "\"\n";
+	}
 }
 
 void doGuesMyNumber() {

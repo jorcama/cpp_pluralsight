@@ -7,3 +7,6 @@ void doStreamIO();
 void doFlowOfControl();
 void doGuesMyNumber();
 void doFunctions();
+
+void doString();
+void doStringExercise();

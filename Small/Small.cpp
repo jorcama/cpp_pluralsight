@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Functions.h"
+#include "Collections.h"
 
 
 using std::cout;
@@ -7,6 +8,12 @@ using std::cout;
 
 int main()
 {
+	doCollections();
+	return 0;
+
+	doStringExercise();
+	doString ();
+
 	doStreamIO();
 	doFlowOfControl();
 	doGuesMyNumber();
