@@ -1,16 +1,18 @@
 #include <iostream>
 #include "Functions.h"
 #include "Collections.h"
-
+#include "Account.h"
 
 using std::cout;
 
 
 int main()
 {
-	doCollections();
+	doClass();
 	return 0;
 
+	doCollections();
+	
 	doStringExercise();
 	doString ();
 
