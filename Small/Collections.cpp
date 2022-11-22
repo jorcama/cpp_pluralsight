@@ -47,7 +47,7 @@ void doCollections()
 	}
 	cout << "\n";
 
-	int threes = count(begin(nums), end(nums), 3);
+	int64_t threes = count(begin(nums), end(nums), 3);
 
 	cout << threes << "\n";
 

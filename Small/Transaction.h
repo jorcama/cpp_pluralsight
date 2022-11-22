@@ -1,4 +1,6 @@
-#pragma once
+//#pragma once
+#ifndef __TRANSACTION__
+#define __TRANSACTION__
 #include <string>
 
 class Transaction
@@ -9,5 +11,6 @@ private:
 
 public:
 	Transaction( int amount , std::string type);
-	std::string Report();
+	std::string Report() const;
 };
+#endif

@@ -14,8 +14,8 @@ private:
 
 public:
 	Account();
-	std::vector<std::string> Report();
-	bool Deposit( int amount );
-	bool WithDraw( int amount );
-	int GetBalance() { return balance; }
+	std::vector<std::string> Report() const;
+	bool Deposit(int amount);
+	bool WithDraw(int amount);
+	int GetBalance() const { return balance; }
 };

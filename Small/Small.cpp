@@ -8,9 +8,15 @@ using std::cout;
 
 int main()
 {
-	doClass();
-	return 0;
+	//Project properties modified Treat Warnings as Errors: True
+	/*
+	int i = 3;
+	if (i = 4)
+	{
+		i ++;
+	}*/
 
+	doClass();
 	doCollections();
 	
 	doStringExercise();
